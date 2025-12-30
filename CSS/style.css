@@ -87,6 +87,10 @@ hr{
 
 @media (min-width: 48em)
 {
+    body{
+        background-image: url('../assets/images/background-pattern-desktop.svg');
+    }
+
     .faq{
         width: 45%;
         font-size: 0.75em;
