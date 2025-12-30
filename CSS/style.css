@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.work-sans {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+    font-family: "Work Sans", sans-serif;
+}
+
+
+body{
+    background-color: hsl(275, 100%, 97%);
+    background-image: url('../assets/images/background-pattern-mobile.svg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    display: flex;
+    height: 100vh;
+}
+
+main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+hr{
+    background-color: hsl(275, 100%, 97%);
+}
+
+.faq{
+    background-color: white;
+    padding: 2em;
+    border-radius: 0.5em;
+}
+
+.faq__title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.faq__title-image{
+    width: 1.5em;
+}
+
+.faq__title-text{
+    margin-left: 1em;
+    font-size: 2em;
+}
+
+.faq-item {
+    border-bottom: 1px solid hsl(275, 100%, 97%);
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+.faq-item__btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-item__title{
+    margin-right: 2.5em;
+}
+
+.faq-item__text{
+    margin-top: 1em;
+    color: hsl(292, 16%, 49%);
+}
+
+@media (min-width: 48em)
+{
+    .faq{
+        width: 45%;
+        font-size: 0.75em;
+        border-radius: 1em;
+    }
+
+    .faq__title-text{
+        font-size: 3em;
+        margin-left: 0.5em;
+    }
+
+}
+
+.faq-item__btn:hover{
+    color: rgb(189, 43, 226);
+    cursor: pointer;
+}
+
+
+.hidden{
+    display: none;
+}
